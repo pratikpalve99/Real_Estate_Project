@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blue-grad{
+    background: linear-gradient(97.65deg, #60BBEE 0.33%, #0A72AD 93.35%);
+
+}
+
+.blue-grad-2{
+    background: linear-gradient(97.73deg, #399FD8 -6.96%, #0775B4 23.5%, #003756 92.79%);
+
+}
+
+.black-grad{
+    background: linear-gradient(219.84deg, #474747 4.14%, #222222 44.22%);
+
+}
+
+@layer base{
+    button{
+        padding: 6px 12px;
+    }
+    h2{
+        @apply text-xl md:text-xl lg:text-4xl font-semibold text-black-dark;
+    }
+
+    h3{
+        @apply text-xl font-semibold text-black-light;
+    }
+}
+
+@layer components{
+    .text-gray{
+        @apply text-base md:text-md text-gray-dark;
+    }
+
+    .text-gray-2{
+        @apply text-base md:text-md text-gray-light;
+    }
+
+    .blue-btn{
+        @apply bg-blue-dark text-white ;
+    }
+}
